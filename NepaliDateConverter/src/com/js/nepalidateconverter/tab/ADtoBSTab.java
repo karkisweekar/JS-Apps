@@ -10,7 +10,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView.FindListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -332,12 +331,12 @@ public class ADtoBSTab extends Fragment implements AdapterView.OnItemSelectedLis
                 switch (dayOfWeek) {
                     case 1:
 
-                        t.setText("Converted date is:  \n" + nepYear + " - " + nepMonth + " - " + nepDay + " Sunday");
+                        t.setText("Converted date is:  \n\n" + nepYear + " - " + nepMonth + " - " + nepDay + " Sunday");
                         neplMonth = util.getMonthInNepali(nepMonth);
                         neplYear = util.getYearInNepali(String.valueOf(nepYear));
                         neplDay = util.getDayInNepali(nepDay);
                         neplBar = util.getDayOfWeekInNepali("Sun");
-                        tNepali.setText("\n\n\n\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
+                        tNepali.setText("\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
                         
 
                         dayOfWeek = Calendar.SATURDAY;
@@ -345,77 +344,77 @@ public class ADtoBSTab extends Fragment implements AdapterView.OnItemSelectedLis
                     case 2:
 
                     	
-                        t.setText("Converted date is:  \n" + nepYear + " - "
+                        t.setText("Converted date is:  \n\n" + nepYear + " - "
                                 + nepMonth + " - " + nepDay + " Monday");
                         
                         neplMonth = util.getMonthInNepali(nepMonth);
                         neplYear = util.getYearInNepali(String.valueOf(nepYear));
                         neplDay = util.getDayInNepali(nepDay);
                         neplBar = util.getDayOfWeekInNepali("Mon");
-                        tNepali.setText("\n\n\n\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
+                        tNepali.setText("\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
 
                         dayOfWeek = Calendar.SATURDAY;
                         break;
                     case 3:
 
-                        t.setText("Converted date is:  \n" + nepYear + " - "
+                        t.setText("Converted date is:  \n\n" + nepYear + " - "
                                 + nepMonth + " - " + nepDay + " Tuesday");
                         
                         neplMonth = util.getMonthInNepali(nepMonth);
                         neplYear = util.getYearInNepali(String.valueOf(nepYear));
                         neplDay = util.getDayInNepali(nepDay);
                         neplBar = util.getDayOfWeekInNepali("Tue");
-                        tNepali.setText("\n\n\n\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
+                        tNepali.setText("\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
 
                         dayOfWeek = Calendar.SATURDAY;
                         break;
                     case 4:
 
-                        t.setText("Converted date is:  \n" + nepYear + " - "
+                        t.setText("Converted date is:  \n\n" + nepYear + " - "
                                 + nepMonth + " - " + nepDay + " Wednesday");
 
                         neplMonth = util.getMonthInNepali(nepMonth);
                         neplYear = util.getYearInNepali(String.valueOf(nepYear));
                         neplDay = util.getDayInNepali(nepDay);
                         neplBar = util.getDayOfWeekInNepali("Wed");
-                        tNepali.setText("\n\n\n\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
+                        tNepali.setText("\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
                         
                         dayOfWeek = Calendar.SATURDAY;
                         break;
                     case 5:
 
-                        t.setText("Converted date is:  \n" + nepYear + " - "
+                        t.setText("Converted date is:  \n\n" + nepYear + " - "
                                 + nepMonth + " - " + nepDay + " Thursday");
                         neplMonth = util.getMonthInNepali(nepMonth);
                         neplYear = util.getYearInNepali(String.valueOf(nepYear));
                         neplDay = util.getDayInNepali(nepDay);
                         neplBar = util.getDayOfWeekInNepali("Thu");
-                        tNepali.setText("\n\n\n\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
+                        tNepali.setText("\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
 
                         dayOfWeek = Calendar.SATURDAY;
                         break;
                     case 6:
 
-                        t.setText("Converted date is:  \n" + nepYear + " - "
+                        t.setText("Converted date is:  \n\n" + nepYear + " - "
                                 + nepMonth + " - " + nepDay + " Friday");
                         neplMonth = util.getMonthInNepali(nepMonth);
                         neplYear = util.getYearInNepali(String.valueOf(nepYear));
                         neplDay = util.getDayInNepali(nepDay);
                         neplBar = util.getDayOfWeekInNepali("Fri");
-                        tNepali.setText("\n\n\n\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
+                        tNepali.setText("\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
                         
 
                         dayOfWeek = Calendar.SATURDAY;
                         break;
                     case 7:
 
-                        t.setText("Converted date is:  \n" + nepYear + " - "
+                        t.setText("  Converted date is:  \n\n" + nepYear + " - "
                                 + nepMonth + " - " + nepDay + " Saturday");
                         neplMonth = util.getMonthInNepali(nepMonth);
                         neplYear = util.getYearInNepali(String.valueOf(nepYear));
                         neplDay = util.getDayInNepali(nepDay);
                         neplBar = util.getDayOfWeekInNepali("Sat");
-                        tNepali.setText("\n\n\n\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
+                        tNepali.setText("\n" + neplYear + " - " + neplMonth + " - " + neplDay + " - " + neplBar);
 
                         dayOfWeek = Calendar.SATURDAY;
                         break;
