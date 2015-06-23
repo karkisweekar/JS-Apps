@@ -46,8 +46,8 @@
         android:layout_width="100dip"
         android:layout_height="wrap_content"
         android:layout_below="@+id/dayView"
-        android:layout_toRightOf="@+id/monthView"
         android:layout_marginRight="9dp"
+        android:layout_toRightOf="@+id/monthView"
         android:layout_weight="3"
         android:entries="@array/engdays" />
 
