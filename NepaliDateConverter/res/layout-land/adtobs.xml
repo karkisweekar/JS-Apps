@@ -41,26 +41,6 @@
         android:text="AD देखि बिक्रम संवत "
         android:textColor="#FFFFFF" />
 
-
-    <TextView
-        android:id="@+id/textV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/adToBsSp3"
-        android:layout_alignRight="@+id/nepView"
-        android:textColor="#ff07c6ff"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/nepView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/dayView"
-        android:layout_marginRight="46dp"
-        android:textColor="#ff07c6ff"
-        android:textStyle="bold" />
-
     <Spinner
         android:id="@+id/adToBsSp3"
         android:layout_width="100dip"
@@ -88,5 +68,27 @@
         android:layout_below="@+id/textYear"
         android:layout_weight="1"
         android:entries="@array/engyear" />
+
+    <TextView
+        android:id="@+id/nepView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adToBsSp3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44dp"
+        android:text="Text 2"
+        android:textColor="#ff07c6ff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nepView"
+        android:layout_alignTop="@+id/adToBsSp3"
+        android:layout_marginTop="8dp"
+        android:text="Text 1"
+        android:textColor="#ff07c6ff"
+        android:textStyle="bold" />
 
 </RelativeLayout>

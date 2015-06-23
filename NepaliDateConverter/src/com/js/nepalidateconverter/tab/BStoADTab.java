@@ -50,7 +50,7 @@ public class BStoADTab extends Fragment implements AdapterView.OnItemSelectedLis
         View v =inflater.inflate(R.layout.bstoad,container,false);
 
         t = (TextView) v.findViewById(R.id.text);
-        spinner1 = (Spinner) v.findViewById(R.id.engspiner1);
+        spinner1 = (Spinner) v.findViewById(R.id.engspinner1);
         spinner2 = (Spinner) v.findViewById(R.id.engspinner2);
         spinner3 = (Spinner) v.findViewById(R.id.engspinner3);
 
@@ -128,6 +128,7 @@ public class BStoADTab extends Fragment implements AdapterView.OnItemSelectedLis
 
                     t.setText("Converted date is:  \n\n" + engYear + " - " + englMonth + " - " + engDay + "  " + day);
                 } catch (NepaliDateException e) {
+                	t.setText("Please check the date " + " \n" + " and try again!!");
                     e.printStackTrace();
                 }
 
